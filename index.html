@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>project 78</title>
+</head>
+<body>
+    <h1>Family Book</h1>
+    <img src="project family book.jpg" id="coverpage">
+    <button id="next" onclick="next()">next</button>
+    <h2 id="name of member">The Family Book</h2>
+    <script>
+    var images= [   
+    "https://static.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png/revision/latest?cb=20140126234206",
+    "https://media.npr.org/assets/img/2013/05/07/ap0908140151727_vert-06dfa531201681c1ebe2d126471494fdeb5048ae.jpg",   
+    "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png", 
+    "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Lisa_Simpson.png/220px-Lisa_Simpson.png"
+    ];
+
+    var members= [
+        "the family book",
+        "Homer Simposon",
+        "Marge Simpson",
+        "Bart Simpson",
+        "Lisa Simpson"
+    ];
+var i= 0;
+    function next(){
+        document.getElementById("coverpage").src=images[i]; 
+        i++;
+
+        document.getElementById("name of member").innerHTML=members[i];
+    }
+    
+        
+    </script>
+</body>
+</html>
